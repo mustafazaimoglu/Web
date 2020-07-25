@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Pangolin', cursive;
+}
+
+body {
+    background-color: rgb(29, 59, 114);
+}
+
+a {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+header {
+    position: relative;
+    border: black 1px dashed;
+}
+
+#navbar {
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+    height: 6rem;
+    margin-top: 2rem;
+   
+}
+
+#navbar #image {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    padding: 0.8rem;
+}
+
+#navbar ul li a {
+    padding: 0.5rem;
+}
+
+#navbar ul li a:hover {
+    color: black;
+}
+
+.p {
+    width: 150px;
+    height: 250px;
+}
+
+#photos {
+    margin: 1rem auto;
+    border: black 1px dashed;
+    display: flex;
+    width: 100%;
+    background-color: burlywood;
+    height: 300px;
+
+}
+
+#photos .ana {
+    width: 50%;
+    border: black 1px dashed;
+    position: relative;
+    padding: 1rem;
+}
+
+.p1  {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.p2  {
+    opacity: 0.7;
+    position: absolute;
+    left: 130px;
+    z-index: 2;
+}
+.p3  {
+    opacity: 0.8;
+    position: absolute;
+    left: 260px;
+    z-index: 3;
+}
+.p4  {
+    opacity: 0.7;
+    position: absolute;
+    left: 390px;
+    z-index: 2;
+}
+.p5  {
+    opacity: 0.4;
+    position: absolute;
+    left: 520px;
+    z-index: 4;
+}
+

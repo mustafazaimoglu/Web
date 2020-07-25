@@ -1,0 +1,17 @@
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-color-red {
+    background-color: #f44336;
+}
+
+.bg-color-light-gray {
+    background-color: #f1f1f1;
+}
+
+.bg-color-dark-gray {
+    background-color: #666666;
+}

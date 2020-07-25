@@ -1,0 +1,37 @@
+header nav #navbarstick {
+    flex-direction: column;
+}
+
+#topics ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#topics ul li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+}
+
+#lastpart {
+    flex-direction: column;
+}
+
+#lastpart #lphoto {
+    background-color: yellow;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+}
+
+#lastpart #ltext h2{
+    text-align: center;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    padding: 0.1rem;
+}

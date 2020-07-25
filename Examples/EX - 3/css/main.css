@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Rationale', sans-serif;
+}
+
+body {
+    background-color: rgb(223, 206, 170);
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav #logo {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.4rem;
+} 
+
+header nav #navbarstick {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-bottom: 1rem;
+} 
+
+header nav #navbarsearch{
+    padding: 1rem;
+}
+
+header nav #navbarsearch button{
+    padding: 0.5rem;
+}
+
+header nav #navbarsearch input{
+    padding: 0.5rem;
+}
+
+header nav #navbarstick ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav #navbarstick ul li{
+    padding: 1rem;
+}
+
+header nav #navbarstick ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+#mainphoto  {
+    background-color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 10px 5px red;
+}
+
+#mainphoto #photo {
+    padding: 0.5rem;
+    width: 100%;
+    height: 300px;
+}
+
+#topics {
+    margin-bottom: 1rem;
+}
+
+#topics ul{
+    display: flex;
+    list-style: none;
+}
+
+#topics ul li {
+    margin-right: 0.8rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+#topics ul li a{
+    padding-top: 0.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#topics ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+#topics ul li #tphoto {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 150px;
+    background-color: blue;
+}
+
+#topics #t2 #tphoto {
+    background-color: tomato;
+}
+
+#topics #t4 #tphoto {
+    background-color: blueviolet;
+}
+
+#lastpart {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#lastpart #lphoto {
+    background-color: yellow;
+    margin-right: 1rem;
+}
+
+#lastpart #ltext h2{
+    padding-bottom: 0.5rem;
+}
+
+#lastpart #ltext a{
+    padding-top: 0.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+#footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li{
+    padding: 0.5rem;
+}
+

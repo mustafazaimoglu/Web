@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex -Item</title>
+
+    <style>
+        /* 
+        SELF-ALING diyerek kendi içinde flex-direction: row; iken yukarı aşağı hareket ettirebiliriz.
+        */
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 75%;
+            height: 500px;
+            margin: 0 auto;
+            background-color: black;
+            display: flex;
+        }
+
+        .box {
+            margin: 10px;
+            width: 150px;
+            height: 120px;
+
+        }
+
+        .box-1 {
+            order: 54;
+            background-color: blue;
+            flex-grow: 15;
+            align-self: center;
+        }
+
+        .box-2 {
+            order: 154;
+            background-color: red;
+            flex-grow: 8;
+            align-self: flex-end;
+        }
+
+        .box-3 {
+            order: 1;
+            background-color: green;
+            flex-grow: 8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+    </div>
+
+</body>
+
+</html>

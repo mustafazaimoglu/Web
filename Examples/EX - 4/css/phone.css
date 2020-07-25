@@ -1,0 +1,29 @@
+
+
+#navbar ul li a {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.4rem;
+    padding: 1rem;
+}
+
+#part2 #part2-2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#part2 #part2-2 i{
+    align-self: center;
+}
+
+#part3 #part3-3 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#part3 #part3-3 i{
+    align-self: center;
+}
+
+  

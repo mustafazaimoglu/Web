@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #ana {
+            padding: 1rem;
+            background-color: green;
+            margin: 1rem auto;
+            width: 10rem;
+            font-size: 2rem;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+
+
+
+        #content {
+            display: none;
+            position: absolute;
+            background-color: teal;
+            padding: 1rem;
+            z-index: 150;
+        }
+
+        #ana:hover #content {
+            display: inline-block;
+        }
+
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dcontent {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 150;
+        }
+
+        .dropdown:hover .dcontent {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ana">
+        push me
+
+        <div id="content">
+            HELLO, FUCKİNG WORLD!
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores numquam obcaecati sunt, unde laborum
+            minus.
+        </div>
+
+    </div>
+
+    <div class="dropdown">
+        <button id="button" style="padding: 1rem; margin: 5rem;">
+            mkz
+        </button>
+
+        <div class="dcontent">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

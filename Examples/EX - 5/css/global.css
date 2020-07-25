@@ -1,0 +1,26 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.text-color-red {
+    color: red;
+}
+.text-color-blue {
+    color: blue;
+}
+.text-color-green {
+    color: green;
+}
+.text-color-orange {
+    color: orange;
+}
+
+.text-size64 {
+    font-size: 4rem;
+}
+
+.bg-color-gray {
+    background-color: gray;
+}
+    

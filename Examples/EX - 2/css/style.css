@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    color: #ffffff; 
+    height: 100%;
+    font-family: "Raleway", sans-serif
+}
+
+body {
+    height: 100%;
+}
+
+#background {
+    background-image: url('/images/forestbridge.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#background h1,.names {
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+#background h1 {
+    font-size: 3rem;
+}
+
+.names {
+    padding: 1rem;
+    border-top: 1.5px white solid;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}

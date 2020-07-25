@@ -1,0 +1,41 @@
+
+.sbb-left {
+    display: block;   
+}
+
+#left-bar {
+    display: block !important;
+    border: none;
+}
+
+#sidebar-list {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-bottom: .3rem;
+    background-color: #142850;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999;
+    transition: .6s;
+    text-align: center;
+    min-width: 0;
+}
+
+.sidebar-list-item {
+    padding: 1rem;
+    transition: .3s;
+    border-radius: .2rem;
+}
+
+
+.sidebar-list-item:hover {
+    background-color: #1a3977;
+
+}
+
+#sidebar-header {
+    color: #ffffff;
+}

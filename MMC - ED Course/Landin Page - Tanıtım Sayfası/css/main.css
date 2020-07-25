@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #100E17;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* NAVBAR SECTION */
+
+#navbar {
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 5rem;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background-color: #888888;
+}
+
+/* HOME SECTİON */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+
+#home img {
+    width: 300px;
+    height: auto;
+    border-radius: 20%;
+}
+
+#home #name h2 {
+    margin: 0.5rem 0;
+}
+
+#home #name p {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.rainbow {
+    position: fixed;
+    bottom: 0;
+}
+ 
+/* SCHOOLS SECTION */
+
+#schools {
+    padding: 1rem;
+    background-color: rgb(63, 66, 66);
+    color: white;
+}
+
+#schools .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#schools .items .item {
+    padding: 1rem;
+    text-align: center;
+}
+
+#schools .items .item:hover {
+    color: yellow
+}
+
+#schools .items .item h3 {
+    padding: 0.4rem;
+}
+
+/* COURSES */ 
+
+#certificates {
+    padding: 1rem;
+    color: white;
+}
+
+.certs {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.certs .cert {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.certs .cert .cert-image {
+    margin-right: 0.8rem;
+    position: relative;
+
+}
+
+.certs .cert .cert-image img {
+    width: 230px;
+    border-radius: 7px;
+}
+
+.certs .cert .cert-image span {
+    background-color: red;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+
+.certs .cert .cert-info .csscert{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.50rem;
+    opacity: 0.8;
+}
+
+
+.certs .cert .cert-info .title{
+    font-weight: 700;
+    opacity: 1;
+}
+
+/* CONTACT */
+
+#contact {
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+#contact .contact-form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-form ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#contact .contact-form ul li a {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#contact .contact-form ul li a:hover {
+    opacity: 0.8;
+}
+
+#contact .contact-form button {
+    padding: 0.7rem;
+}
