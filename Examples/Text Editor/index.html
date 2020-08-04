@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/monokai-sublime.min.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="editor">
+        <p>Hello World!</p>
+        <p>Some initial <strong>bold</strong> text</p>
+        <p><br></p>
+    </div>
+    <button id="btn">Ver Babuş</button>
+
+    <div id="a">
+
+    </div>
+
+    <p><em>Mustafa </em><strong><em> KUZ</em></strong></p>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+        let quill = new Quill('#editor',
+        {
+            modules:
+            {
+                toolbar: [
+                    [
+                    {
+                        header: [1, 2, false]
+                    }],
+                    ['bold', 'italic', 'underline'],
+                    ['image', 'code-block']
+                ]
+            },
+            theme: 'snow'
+        });
+
+        document.getElementById("btn").addEventListener("click", function(e)
+        {
+            let delta = document.getElementById("editor").innerHTML;
+            console.log(delta);
+
+            document.getElementById("a").innerHTML = delta;
+        })
+    </script>
+
+</body>
+
+</html>
