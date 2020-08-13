@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "name": "Mehmet Şen",
+      "department": "CIA",
+      "salary": "5000",
+      "id": 1
+    },
+    {
+      "name": "Mehmet Badem",
+      "department": "FBI",
+      "salary": "6500",
+      "id": 3
+    },
+    {
+      "name": "Ramazan Kahraman",
+      "department": "IT",
+      "salary": "5000",
+      "id": 5
+    },
+    {
+      "name": "Salih Güçlüer",
+      "department": "IR",
+      "salary": "6500",
+      "id": 6
+    }
+  ]
+}
