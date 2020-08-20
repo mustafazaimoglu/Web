@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKZ</title>
+</head>
+<body>
+    <h2>mkz</h2>
+
+    <form action="#">
+        <select name="type" id="type">
+            <option value="car">Car</option>
+            <option value="pizzas">Pizzas</option>
+            <option value="new">New</option>
+        </select>
+        <input type="text" id="newType" style="display: none;">
+    </form>
+
+
+    <script>
+        let selectList = document.querySelector("#type");
+        selectList.addEventListener("change",(e) =>
+        {
+            console.log(e.target.value);
+
+            if(e.target.value === "new")
+            {
+                document.querySelector("#newType").style.display = "block";
+            }
+            else
+            {
+                document.querySelector("#newType").style.display = "none";
+            }
+        })
+
+    </script>
+</body>
+</html>

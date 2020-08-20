@@ -9,5 +9,9 @@
 
     echo $_SESSION["name"];
 
+    $gender = $_COOKIE["gender"];
+
+    echo "(" . $gender . ")";
+
 
 ?>

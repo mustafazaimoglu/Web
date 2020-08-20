@@ -9,13 +9,13 @@
     <?php
         $name = $email = $gender = $comment = $website = "";
 
-        if (isset($_POST["submit"]))
+        if (isset($_GET["submit"]))
         {
-            $name = test_inputs($_POST["name"]);
-            $email = test_inputs($_POST["email"]);
-            $website = test_inputs($_POST["url"]);
-            $comment = test_inputs($_POST["comment"]);
-            $gender = test_inputs($_POST["gender"]);
+            $name = test_inputs($_GET["name"]);
+            $email = test_inputs($_GET["email"]);
+            $website = test_inputs($_GET["url"]);
+            $comment = test_inputs($_GET["comment"]);
+            $gender = test_inputs($_GET["gender"]);
         }
 
         function test_inputs($data)
@@ -29,7 +29,7 @@
     ?>
 
 
-    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
+    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" method="get">
         <label for="name">Name :</label>
         <input type="text" name="name" id="name"> 
         <br><br>
