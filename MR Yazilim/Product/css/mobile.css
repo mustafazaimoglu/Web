@@ -74,7 +74,7 @@
     z-index: 100;
     padding: .1rem;
     opacity: 0.7;
-    background-color: #2395c5;
+    background-color: #afd0df;
     border-radius: .4rem;
     border: .3px solid black;
 }
@@ -84,11 +84,51 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: black;
+    font-weight: 500 !important;
 }
 
 #sidebar
 {
     margin-top: .5rem;
 }
+
+.problemNavigation
+{
+    margin-top: 1rem;
+}
+
+/* HOME */
+
+#home .ne-nedir  
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .algoritma 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .algoritma img
+{
+    margin-right: 0;
+}
+
+#home .ne-nedir img
+{
+    margin-left: 0;
+}
+
+.homeCard
+{
+    margin: .6rem 3.5rem;
+}
+
 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Edit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="./ckeditor5/ckeditor.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-3">
+            <div class="col-md-9 text-center">
+                <h3>Konu Düzenle</h3>
+                <div class="bring">
+                    <form action="#" method="POST">
+                        <div class="d-flex justify-content-center mb-3">
+                            <span style="min-width: 350px;">
+                                <select name="Category" id="Category" class="form-control">
+                                    <option value="Java">Java</option>
+                                    <option value="C++">C++</option>
+                                    <option value="Python">Python</option>
+                                </select>
+                            </span>
+
+                            <input type="submit" class="btn btn-warning mx-2" name="bringCategory" value="Konuları Getir">
+
+                        </div>
+
+                    </form>
+                    <div class="topic">
+                        <form action="#" method="POST">
+                            <p>---- Konu Seç</p>
+                                    <select name="content" id="content" class="form-control">
+                                        <option value="Java">Matris</option>
+                                        <option value="C++">Değişken</option>
+                                        <option value="Python">Map</option>
+                                    </select>
+    
+                                <input type="submit" class="btn btn-primary my-2 px-4" name="bringContent" value="Getir">
+                        </form>
+                    </div>
+                    
+
+                </div>
+                <hr>
+                <div class="editing">
+                    <form action="#" method="post">
+
+
+                        <input type="text" name="title" class="form-control my-2" placeholder="Konu Başlığını Girin.. (Side bar ve url için kısaltılabilir.)">
+
+                        <textarea name="editor" id="editor"></textarea>
+
+                        <input type="hidden" id="imagesJson" name="imagesJson">
+                        <input type="submit" name="guncelle" value="Güncelle" class="btn btn-success my-3 px-4">
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-3">
+                <form action="#">
+                    <div class="text-right ">
+                        <p class="text-center">Resim Ekle</p>
+                        <input type="text" name="source" id="source" placeholder="Source" class="form-control my-2">
+                        <input type="text" name="alt" id="alt" placeholder="Alt" class="form-control my-2">
+
+                        <button name="createNewImageCode" id="createNewImageCode" class="btn btn-primary">Resim Kodu Ver</button>
+
+                        <input type="text" class="form-control my-2" name="imgcode" id="imgcode" readonly>
+                    </div>
+                </form>
+
+
+                <form class="my-4">
+                    <ul class="list-group" id="addedImages">
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'),
+            {
+                toolbar: ["heading", "|", "bold", "italic", "link", "bulletedList", "numberedList", "alignment", "|", "FontBackgroundColor", "FontColor", "Highlight", "|", "CodeBlock", "|", "indent", "Outdent", "BlockQuote", "HorizontalLine", "Subscript", "Superscript", "StrikeThrough", "Underline", "|", "InsertTable", "MediaEmbed", "ImageUpload", "undo", "redo", "|", "ckfinder"]
+            })
+            .then(editor =>
+            {
+                console.log(editor);
+            })
+            .catch(error =>
+            {
+                console.error(error);
+            });
+    </script>
+</body>
+
+</html>

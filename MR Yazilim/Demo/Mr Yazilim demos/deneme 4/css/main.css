@@ -1,10 +1,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 a {
     text-decoration: none !important;
-    font-weight: 500;
+    font-weight: 600 !important;
+    letter-spacing: .2px;
 }
 
 ul {
@@ -126,4 +128,41 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.problemNavigation
+{
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.problemNavigation a{
+    color: black;
+    margin-top: .5rem;
+    color: white;
+}
+
+.problemNavigation a h5:hover
+{
+   color: rgb(219, 219, 219);
+   transition: .2s;
+    
+}
+
+.problemNavigation a h5{
+    display: inline;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #2395c5;
+    box-shadow: 1px 1px 4px black;
+}
+
+.contentImage 
+{
+    max-width: 770px;
+    display :block;
 }
