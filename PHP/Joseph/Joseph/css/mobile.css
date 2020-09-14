@@ -1,0 +1,20 @@
+.searching form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchArea 
+{
+   border-radius: .2rem;
+   width: 70vw; 
+}
+
+.searching div
+{
+    margin-top: .3rem;
+    border-radius: .2rem;
+    
+    
+}
