@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox - Container</title>
+
+    <style>
+        /* 
+        flex-direction: row; FLEX-DIRECTION ROW IKEN JUSTIFY-CONTENT SAGDAN SOLA AYAR YAPAR. ALING-ITEMS YUKARDAN AŞAĞI DIRECTION DEĞİŞİRSE DİĞERLERİDE DEĞİŞİR.
+        justify-content: center; 
+        align-items: flex-end;
+         */
+
+        /*
+        Normalde flexbox verilen aralığa sığdırmak için boxları kuçultebilir.
+         */
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 75%;
+            min-height: 300px;
+            /* min 300 üstü sana kalmıs demek */
+            margin: 0 auto;
+            background-color: black;
+            display: flex;
+            /* flex-direction: column;
+           justify-content: flex-start; flex baslama noktası
+           justify-content: flex-end; bitis nok
+                  justify-content: space-evenly; eşit aralıklı
+           justify-content: space-around; kıvırnca yuvarlak yapacak sekilde
+                    justify-content: space-between; koselere iterek
+           justify-content: center;
+           */
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap; /* ALT SATIRA GEÇMESİ İÇİN WRAP BÜKMEK DEMEK */ 
+
+        }
+
+        .box {
+            background-color: blanchedalmond;
+            width: 200px;
+            margin: 15px;
+            height: 150px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Aricle 1</h1>
+            <p>Lorem ipsum dolor sit elit.</p>
+        </div>
+        <div class="box">
+            <h1>Aricle 2</h1>
+            <p>Lorem ipsum dolor sit elit.</p>
+        </div>
+        <div class="box">
+            <h1>Aricle 3</h1>
+            <p>Lorem ipsum dolor sit elit.</p>
+        </div>
+        <div class="box">
+            <h1>Aricle 4</h1>
+            <p>Lorem ipsum dolor sit elit.</p>
+        </div>
+        <div class="box">
+            <h1>Aricle 5</h1>
+            <p>Lorem ipsum dolor sit elit.</p>
+        </div>
+    </div>
+</body>
+
+</html>

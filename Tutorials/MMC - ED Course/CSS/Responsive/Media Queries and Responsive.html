@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries & Responsive</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            color: white;
+        }
+        body {
+            background-color: red;
+        }
+
+        @media(min-width: 768px) { /* 768 den buyukken bunu çalıştır */
+            .p {
+                display: none;
+            }
+        }
+
+        .container {
+            display: flex;
+            margin: 15px auto;
+            max-width: 900px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            padding: 5px;
+            border: solid blue 2px;
+            background-color: darkgray;
+            width: 25%;
+        }
+        
+        p::first-line
+        {
+            color: navy;
+        }
+
+        p::first-letter {
+            color: rgb(0, 0, 0);
+        }
+
+
+        .box h1 {
+            text-transform: uppercase;
+        }
+        
+        @media(max-width: 768px) {
+            body {
+                background-color: green;
+            }
+
+            .box {
+                width: 50%;
+            }
+        }
+
+        @media(max-width: 500px) { /* 500 ve 500 den küçükken bunu çalıştır. */
+            body {
+                background-color: blue;
+            }
+
+            .box {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <p class="p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ea aspernatur cum, nostrum blanditiis officiis.
+    </p>
+
+    <div class="container">
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque ipsam eligendi tenetur dolorem vitae.</p>
+        </div>
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque ipsam eligendi tenetur dolorem vitae.</p>
+        </div>
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque ipsam eligendi tenetur dolorem vitae.</p>
+        </div>
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque ipsam eligendi tenetur dolorem vitae.</p>
+        </div>
+
+    </div>
+</body>
+</html>

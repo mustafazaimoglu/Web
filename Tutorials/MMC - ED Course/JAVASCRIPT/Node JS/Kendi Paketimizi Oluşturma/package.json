@@ -1,0 +1,32 @@
+{
+  "name": "mustafa-zaimoglu",
+  "version": "0.0.1",
+  "description": "Bu bir deneme paketidir.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mkz",
+    "code": "echo 'mkz'",
+    "init": "node index.js"
+  },
+  "keywords": [
+    "package",
+    "boot"
+  ],
+  "author": "Mustafa Zaimoglu",
+  "license": "ISC",
+  "dependencies": { // npm install cli 
+    "mongoose": "^5.9.28",
+    "simple-is": "^0.2.0"
+  },
+  "devDependencies": { // npm install webpack cli --save-dev  
+    "cli": "^1.0.1", 
+    "webpack": "^4.44.1"
+  }
+}
+
+
+/*
+
+Dependencies npm install denilerek serverde kurulabilir. 
+
+*/
