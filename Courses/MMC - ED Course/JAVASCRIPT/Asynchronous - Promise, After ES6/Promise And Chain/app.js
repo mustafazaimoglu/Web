@@ -42,14 +42,10 @@ function addNumber(number)
             {
                 reject("Not a Number (NaN)!");
             }
-        },3500);
+        },500);
     })
 }
 
-addNumber("15")
-.then(response => 
-{
-    console.log(response);
-    return response + 33;
-}).then(response2 => console.log(response2))
+addNumber(15)
+.then(response => response + 3).then(response2 => console.log(response2))
 .catch(reject => console.error(reject));
