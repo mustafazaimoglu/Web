@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOVER</title>
+    <style>
+        .mkzMargin {
+            margin: 3rem;
+            padding: 3rem;
+            border: 2px solid blue;
+            z-index: 5;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin-bottom: 1.4rem;
+            transition: .5s;
+            z-index: 200 !important;
+            position: relative;
+        }
+        
+        .box:hover {
+            margin-top: -1rem;
+            margin-bottom: 2.4rem;
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="mkzMargin">
+        <!-- <ul>
+            <div style="display: inline-block; position: relative;">
+                
+                <li class="box"></li>
+                <div style="position: absolute; top: 10px; right: 10px;"> text</div>
+            </div>
+        </ul> -->
+        <div style="display: inline-block; position: relative;">
+            <div style="position: absolute; bottom: 1.4rem; right: 50px; display: block;"> 16,03,2000</div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
